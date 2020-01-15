@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Orasaun Katolik</string>
+    <string name="title_activity_home">homeActivity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="keluar">Exit</string>
+    <string name="tentang_saya">About me</string>
+    <string name="ikus">G: Jezús moris hias!!\n «Nia moris hi’as duni…\n Ida ne’e mak ita-nia fiar, fiar ne’ebé bele soi mundu!»\n Se Jezús moris hi’as, ita mós moris hi’as hamutuk ho Nia, ita bele hetan duni moris foun no rahun di’ak.\n KANTU FINÁL</string>
+
+
+</resources>

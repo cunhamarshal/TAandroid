@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.marshalccunha.orasaunkatolik">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".homeActivity"
+            android:label="@string/title_activity_home" />
+        <activity android:name=".Loron2Activity" />
+        <activity android:name=".SelukActivity" />
+        <activity android:name=".NovenaActivity" />
+        <activity android:name=".RosarioActivity" />
+        <activity android:name=".MisaActivity" />
+        <activity android:name=".ViasakraActivity" />
+        <activity android:name=".TentangActivity" />
+        <activity android:name=".AmiAmanActivity" />
+        <activity android:name=".SinalKruzActivity" />
+        <activity android:name=".AveMariaActivity" />
+        <activity android:name=".Loron2_Gloria" />
+        <activity android:name=".Loron2_kredo"></activity>
+    </application>
+
+</manifest>

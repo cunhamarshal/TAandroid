@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:id="@+id/container"
+    android:background="@drawable/gradient1"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".homeActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="7">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginLeft="27dp"
+                android:layout_marginTop="75dp"
+                android:layout_marginRight="27dp"
+                android:layout_marginBottom="1dp"
+                android:text="Orasaun-orasun katolika nian"
+                android:textSize="18sp"
+                android:textStyle="bold|italic" />
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/ic_settings_black_24dp"
+                android:onClick="show"
+                />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                app:srcCompat="@drawable/splash" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="11dp"
+                android:layout_below="@+id/imageView"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="-4dp"
+                android:layout_marginBottom="60dp"
+                android:text="Orasaun Katolika"
+                android:textSize="5sp" />
+        </RelativeLayout>
+
+
+        <GridLayout
+            android:id="@+id/mainGrid"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="6"
+            android:alignmentMode="alignMargins"
+            android:columnCount="2"
+            android:columnOrderPreserved="true"
+            android:padding="14dp"
+            android:rowCount="3">
+
+
+            <!--baris 1 -->
+            <!-- kolom 1 -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/Loron2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ivloron"
+                        android:layout_width="90dp"
+                        android:layout_height="60dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/lor" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ivloron"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginBottom="0dp"
+                        android:text="Orasaun Loron-loron"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="12dp" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!-- kolom 2 -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/Seluk"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ivSeluk"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/bible" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ivSeluk"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginBottom="0dp"
+                        android:text="Orasaun seluk"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="12dp" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!--baris 2-->
+            <!-- kolom 1 -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/Rosario"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ivRosario"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/rosario" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ivRosario"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginBottom="0dp"
+                        android:text="Orasaun Rosario"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="12dp" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!-- kolom 2 -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/Misa"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ivMisa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/misa" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ivMisa"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginBottom="0dp"
+                        android:text="Orasaun Santa Misa"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="12dp" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!--baris 2-->
+            <!-- kolom 1 -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/Viasakra"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ivViasakra"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/salib" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ivViasakra"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="11dp"
+                        android:layout_marginBottom="0dp"
+                        android:text="Orasaun Viasakra"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="13dp" />
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!-- kolom 2 -->
+            <android.support.v7.widget.CardView
+                android:id="@+id/Novena"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="16dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/ivNovena"
+                        android:layout_width="match_parent"
+                        android:layout_height="60dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/novena" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/ivNovena"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginBottom="0dp"
+                        android:text="Novena"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/black"
+                        android:textSize="12dp" />
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+        </GridLayout>
+
+    </LinearLayout>
+</LinearLayout>
